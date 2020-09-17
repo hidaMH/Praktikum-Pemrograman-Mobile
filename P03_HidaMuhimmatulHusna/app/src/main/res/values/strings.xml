@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MAHASISWA</string>
+    <string name="NIM">NIM</string>
+    <string name="NAMA">NAMA</string>
+    <string name="ALAMAT">ALAMAT</string>
+    <string name="NO_HP">NO HP</string>
+    <string name="NAMA_AYAH">NAMA AYAH</string>
+    <string name="NAMA_IBU">NAMA IBU</string>
+</resources>

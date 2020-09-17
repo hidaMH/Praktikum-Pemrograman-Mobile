@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NIM"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/txtNAMA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtNAMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NAMA"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@id/txtNIM"
+        app:layout_constraintEnd_toEndOf="@id/txtNIM"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/txtNIM"
+        app:layout_constraintTop_toBottomOf="@id/txtNIM" />
+
+    <EditText
+        android:id="@+id/txtALAMAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ALAMAT"
+        android:inputType="textLongMessage"
+        app:layout_constraintBottom_toBottomOf="@id/NO_HP"
+        app:layout_constraintTop_toBottomOf="@id/txtNAMA"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/NO_HP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NO_HP"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/txtALAMAT"
+        app:layout_constraintTop_toBottomOf="@id/txtALAMAT"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/NAMA_AYAH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NAMA_AYAH"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/NO_HP"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="404dp"
+        android:layout_height="53dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NAMA_IBU"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/NAMA_AYAH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NAMA_AYAH" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
