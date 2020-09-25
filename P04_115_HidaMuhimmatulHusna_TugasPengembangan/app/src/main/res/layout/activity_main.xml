@@ -40,9 +40,41 @@
         android:layout_below="@id/times"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:text="@string/simpan" />
+
+    <EditText
+        android:id="@+id/nama_pesanan"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/times"
+        android:layout_marginTop="33dp"
+        android:autofillHints=""
+        android:ems="60"
+        android:hint="@string/nama_pemesanan"
+        android:inputType="textLongMessage" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nama_pesanan"
+        android:layout_marginBottom="-92dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nama_pesanan"
+        android:layout_marginBottom="-124dp"
+        android:hint="@string/alamat"
+        android:inputType="textLongMessage"
+        android:autofillHints="" />
 
 </RelativeLayout>
